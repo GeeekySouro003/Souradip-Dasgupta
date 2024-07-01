@@ -1,14 +1,22 @@
 import styles from './HeroStyles.module.css';
 import heroImg from  '../../assets/hero-img.png'
-import themeIcon from '../../assets/sun.svg';
-import twitterIcon from '../../assets/twitterLight.svg';
-import linkedlnIcon from '../../assets/linkedlnLight.svg';
-import githubIcon from '../../assets/githubLight.svg';
+import sun from '../../assets/sun.svg';
+import moon from '../../assets/moon.svg';
+import twitterLight from '../../assets/twitterLight.svg';
+import linkedlnLight from '../../assets/linkedlnLight.svg';
+import githubLight from '../../assets/githubLight.svg';
 import CV from '../../assets/Souradip_Dasgupta(CV) Swipe.pdf'
+import twitterDark from '../../assets/twitterDark.svg';
+import linkedlnDark from '../../assets/linkedlnDark.svg';
+import githubDark from '../../assets/githubDark.svg';
 import { useTheme } from '../../common/ThemeContext';
 function Hero() {
  const {theme,toggleTheme} =useTheme();
-
+ 
+ const themeIcon = theme === 'light' ? sun : moon ;
+ const twitterIcon = theme === 'light' ? twitterLight:twitterDark;
+ const githubIcon = theme === 'light' ? githubLight:githubDark;
+ const linkedlnIcon = theme === 'light' ? linkedlnLight:linkedlnDark;
 
   return <section id='hero' className={styles.container}>
     <div className={styles.colorModeContainer}>
