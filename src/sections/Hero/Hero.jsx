@@ -36,7 +36,7 @@ function Hero() {
         <img src={twitterIcon} alt='Twitter icon' />
         </a>
         
-        <a href='https://linkedln.com/' target='_blank'>
+        <a href='https://www.linkedin.com/in/souradip-dasgupta/' target='_blank'>
         <img src={linkedlnIcon} alt='Linkedln icon' />
         </a>
 
