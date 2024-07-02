@@ -32,7 +32,7 @@ function Hero() {
         </h1>
     <h3>FullStack Developer</h3>  
     <span>
-        <a href='https://twitter.com/' target='_blank'>
+        <a href='https://x.com/Souradip69' target='_blank'>
         <img src={twitterIcon} alt='Twitter icon' />
         </a>
         
@@ -43,7 +43,7 @@ function Hero() {
         <a href='https://github.com/' target='_blank'>
         <img src={githubIcon} alt='Github icon' />
         </a>
-        
+          
         
     </span>
     <p>
